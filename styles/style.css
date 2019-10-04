@@ -3,11 +3,6 @@
   font-family: 'Montserrat', sans-serif; }
 @font-face {
   font-family: 'Prata', serif; }
-@font-face {
-  font-family: 'gotham';
-  src: url("/fonts/GothaProReg.generated.woff2") format("woff2"), url("/fonts/GothaProReg.generated.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 * {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
@@ -26,9 +21,15 @@ button,
 select,
 textarea {
   color: white;
-  font-family: 'gotham';
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 899px) {
+    body,
+    button,
+    select,
+    textarea {
+      font-size: 12px; } }
 
 h1,
 h2,
@@ -91,7 +92,6 @@ section {
 .btn {
   display: inline-block;
   font-size: 0.750em;
-  font-family: 'Montserrat', sans-serif;
   padding: 16px 28px;
   border-top: 1px solid white;
   border-left: 1px solid white;
@@ -114,8 +114,7 @@ header
 
 .header {
   padding: 2vh 0;
-  background-color: white;
-  font-family: 'Montserrat', sans-serif; }
+  background-color: white; }
 
 .header-title {
   grid-column: 3/6;
@@ -172,8 +171,7 @@ footer {
 
 .footer-nav {
   color: white;
-  margin: 2vh 0;
-  font-family: 'Montserrat', sans-serif; }
+  margin: 2vh 0; }
   .footer-nav .footer-nav-list {
     grid-column: 4/7; }
     .footer-nav .footer-nav-list ul {
@@ -242,7 +240,6 @@ form
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Montserrat', sans-serif;
   font-weight: lighter; }
   #form-certificate .contact-form {
     -ms-flex-item-align: center;
@@ -309,9 +306,25 @@ form
       border-radius: 100%;
       position: absolute;
       margin: 2px; }
-    @media (min-width: 600px) and (max-width: 899px) {
+    @media (min-width: 999px) and (max-width: 1381px) {
       #form-certificate .contact-form {
-        width: 50%; } }
+        width: 40%; }
+        #form-certificate .contact-form .contact-form__title {
+          font-size: 1.7em; }
+        #form-certificate .contact-form .contact-form__description {
+          font-size: 0.8em; } }
+    @media (min-width: 360px) and (max-width: 899px) {
+      #form-certificate .contact-form {
+        width: 60%;
+        margin: 0 auto; }
+        #form-certificate .contact-form .contact-form__title {
+          font-size: 1.5em; }
+        #form-certificate .contact-form .contact-form__description {
+          font-size: 0.8em; }
+        #form-certificate .contact-form .contact-form__input_email,
+        #form-certificate .contact-form .contact-form__input_tel,
+        #form-certificate .contact-form .contact-form__input_name {
+          height: 35px; } }
 
 /*--------------------------------------------------------------
 Общий стиль для блоков со слайдерами

@@ -22,14 +22,6 @@
     font-family: 'Prata', serif;
 }
 
-@font-face {
-    font-family: 'gotham';
-    src: url('/fonts/GothaProReg.generated.woff2') format('woff2'),
-         url('/fonts/GothaProReg.generated.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 *{transition: 0.5s;}
 
@@ -49,9 +41,13 @@ button,
 select,
 textarea {
 	color: white;
-	font-family: 'gotham';
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+    line-height: 1.5;
+    
+    @media (min-width: 400px) and (max-width: 899px)  {  
+        font-size: 12px;
+    }
 }
 
 h1,
@@ -125,7 +121,6 @@ section {
 .btn {
     display: inline-block;
     font-size: 0.750em;
-    font-family: 'Montserrat', sans-serif;
     padding: 16px 28px;
     border-top: 1px solid white;
     border-left: 1px solid white;
@@ -153,7 +148,6 @@ header
 .header {
     padding: 2vh 0; 
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -220,7 +214,6 @@ footer {
 .footer-nav {
     color: white;
     margin: 2vh 0; 
-    font-family: 'Montserrat', sans-serif;
     .footer-nav-list {
         grid-column: 4/7;
         
@@ -296,7 +289,6 @@ form
     background-repeat: no-repeat;
     padding: 20px;
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     .contact-form {
         align-self: center;
@@ -375,10 +367,34 @@ form
             margin: 2px;
         }
 
-        @include for-tablet-portait-only {  width: 50%; }
+        @media (min-width: 999px) and (max-width: 1381px)  {  
+            width: 40%; 
+            .contact-form__title {
+                font-size: 1.7em;
+            }
+            .contact-form__description {
+                font-size: 0.8em;
+            }
+        }
+        @media (min-width: 360px) and (max-width: 899px)  {  
+            width: 60%; 
+            margin: 0 auto;
+            .contact-form__title {
+                font-size: 1.5em;
+            }
+            .contact-form__description {
+                font-size: 0.8em;
+            }
+
+            .contact-form__input_email,
+            .contact-form__input_tel,
+            .contact-form__input_name {
+                height: 35px;
+            }
+        }
     }
 
-}
+} 
 /*--------------------------------------------------------------
 Общий стиль для блоков со слайдерами
 --------------------------------------------------------------*/
