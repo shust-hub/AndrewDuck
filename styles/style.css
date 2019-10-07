@@ -173,9 +173,6 @@ header
   border-right: 1px solid rgba(145, 24, 24, 0.5); }
 
 @media (min-width: 299px) and (max-width: 899px) {
-  .header {
-    padding: 1vh 0 10vh; }
-
   .header-title {
     grid-column: 2/8;
     grid-row: 1;
