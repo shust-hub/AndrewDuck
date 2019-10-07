@@ -177,9 +177,18 @@ header
 .grid {
     display: grid;
     grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-    @media (min-width: 360px) and (max-width: 899px)  {  
+    @media (min-width: 299px) and (max-width: 899px)  {  
         grid-template-columns: repeat(8,  1fr);
         grid-template-rows:  1fr 1fr;
+    }
+}
+
+.grid-head {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+    @media (min-width: 299px) and (max-width: 899px)  {  
+        grid-template-columns: repeat(8,  1fr);
+        grid-template-rows:  1fr 36px;
     }
 }
 
@@ -194,6 +203,7 @@ header
     color: $MandarianOrange;
     justify-self: center;
     font-size: 0.875em;
+    z-index: 999;
 
 }
 
@@ -218,7 +228,7 @@ header
 
 @media (min-width: 299px) and (max-width: 899px)  { 
     .header {
-        // padding: 1vh 0 10vh;
+        padding: 1vh 0 0;
     } 
     .header-title {
         grid-column: 2/8;
@@ -236,11 +246,12 @@ header
     //     z-index: 999;
     // }
     .btn-head {
-        grid-column: 2/8;
-        grid-row: 2;
-        justify-self: center;
-        z-index: 999;
-        margin-top: 20px;
+        // grid-column: 2/8;
+        // grid-row: 2;
+        // justify-self: center;
+        // z-index: 999;
+        // margin-top: 20px;
+        display: none;
     }
 }
 
@@ -249,7 +260,7 @@ header
     color: white;
 
     .header-logo {
-        grid-column: 2/3;
+        grid-column: 2;
         align-self: end;
         position: relative;
         height: 100%;
