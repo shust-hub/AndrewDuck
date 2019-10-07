@@ -344,18 +344,26 @@ footer {
         }  
         .copyright {
             grid-column: 2/5;
-            grid-row: 2;
+            grid-row: 3;
             margin: 0;
         }  
         .s-vita {
             grid-column: 5/8;
-            grid-row: 2;  
+            grid-row: 3;  
         }    
+
+        .hr {
+            grid-column: 2/8;
+            width: 100%;
+            grid-row: 2; 
+            margin-left: 0;
+            margin-top: 20px;
+        }
     }
 
     .footer-nav {
         .footer-nav-list {
-            grid-row: 2;
+            grid-row: 1;
             grid-column: 2/8;
             font-size: 0.7em;
             margin:  0;       
@@ -497,9 +505,10 @@ form
             }
         }
         @media (min-width: 360px) and (max-width: 899px)  {  
-            width: 60%; 
+            width: 85%; 
             margin: 0 auto;
             height: 90%;
+            padding: 25px 35px;
 
             .contact-form__title {
                 font-size: 1.5em;
@@ -508,14 +517,23 @@ form
             .contact-form__description, .select {
                 font-size: 0.8em;
             }
+            ul {
+                padding: 20px 14px 14px; 
+            }
+
+           .contact-form input[type="radio"] + label {
+                margin-right: 25px;
 
             .contact-form__input_email,
             .contact-form__input_tel,
             .contact-form__input_name {
                 height: 35px;
             }
-            .btn {
-                width: 84%;
+
+
+            }
+                        .btn {
+                width: 80%;
             }
         }
     }
@@ -573,13 +591,14 @@ form
 @media (min-width: 300px) and (max-width: 750px)  { 
     .withSlider{
         flex-wrap: wrap;
-        height: 47vh;
+        // height: 94vh;
         .description {
             width: 100%;
             border: none!important;
-            height: 47vh;
+            height: 50vh;
             .content {
                 align-self: center;
+                padding: 20px;
                 .btn {
                     margin-bottom: 0px;
                 }
@@ -588,7 +607,7 @@ form
         .slider-wrapper {
             width: 100%;
             border: none!important;
-            height: 47vh;
+            height: 50vh;
             .slider-item img {
                 width: 100%;
                 height: auto;
