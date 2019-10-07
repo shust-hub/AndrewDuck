@@ -405,18 +405,28 @@ form
         width: 30%;
         // text-align: center;
         padding: 50px 70px;
-        margin: auto 0;
+        margin: auto 0; 
 
         .contact-form__title {
             font-size: 1.88em;
             margin-bottom: 5px;
         }
+        ul {
+            list-style: disc;
+            padding: 17px; 
+            margin:0;
+        }  
+        hr {
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-bottom-width: 0;
+        }
         .contact-form__description {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
         .select {
             text-align: left;
-            color: rgba(255, 255, 255, .6);
+            // color: rgba(255, 255, 255, .6);
+            color: white;
             margin-top: 5px;
             margin-bottom: 10px;
         }

@@ -346,11 +346,18 @@ form
     #form-certificate .contact-form .contact-form__title {
       font-size: 1.88em;
       margin-bottom: 5px; }
+    #form-certificate .contact-form ul {
+      list-style: disc;
+      padding: 17px;
+      margin: 0; }
+    #form-certificate .contact-form hr {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom-width: 0; }
     #form-certificate .contact-form .contact-form__description {
-      margin-bottom: 25px; }
+      margin-bottom: 15px; }
     #form-certificate .contact-form .select {
       text-align: left;
-      color: rgba(255, 255, 255, 0.6);
+      color: white;
       margin-top: 5px;
       margin-bottom: 10px; }
     #form-certificate .contact-form .btn {
