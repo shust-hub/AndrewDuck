@@ -207,7 +207,7 @@ header
     .header-phone-item a{ color: $MandarianOrange; }
 }
 
-@media (min-width: 360px) and (max-width: 899px)  { 
+@media (min-width: 299px) and (max-width: 899px)  { 
     .header {
         padding: 1vh 0 10vh;
     } 
@@ -257,7 +257,7 @@ header
 
     }
 
-    @media (min-width: 360px) and (max-width: 899px)  {  
+    @media (min-width: 299px) and (max-width: 899px)  {  
         .header-logo {
             grid-column: 4/6;
             grid-row: 1;
@@ -269,6 +269,14 @@ header
         .head-nav-list {
             grid-column: 2/8;
             font-size: 0.7em;
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }
@@ -336,7 +344,7 @@ footer {
         } 
     }
 }
-@media (min-width: 360px) and (max-width: 899px)  { 
+@media (min-width: 299px) and (max-width: 899px)  { 
     .footer {
         .footer-logo{
             grid-column: 4/6;
@@ -504,7 +512,7 @@ form
                 font-size: 0.8em;
             }
         }
-        @media (min-width: 360px) and (max-width: 899px)  {  
+        @media (min-width: 299px) and (max-width: 899px)  {  
             width: 85%; 
             margin: 0 auto;
             height: 90%;
@@ -516,23 +524,25 @@ form
             }
             .contact-form__description, .select {
                 font-size: 0.8em;
+
             }
+            
+            input[type="radio"] + label {
+                margin-right: 50px;
+            }
+
             ul {
                 padding: 20px 14px 14px; 
             }
-
-           .contact-form input[type="radio"] + label {
-                margin-right: 25px;
-
             .contact-form__input_email,
-            .contact-form__input_tel,
-            .contact-form__input_name {
-                height: 35px;
+                .contact-form__input_tel,
+                .contact-form__input_name {
+                    height: 35px;
             }
 
 
-            }
-                        .btn {
+
+            .btn {
                 width: 80%;
             }
         }
@@ -714,18 +724,18 @@ form
         border-right: 4px solid white;
     }
 }
-#arrow-prev1{
-    display: none!important;
-}
+// #arrow-prev1{
+//     display: none!important;
+// }
 
-#arrow-next2{
-    display: none!important;
-}
+// #arrow-next2{
+//     display: none!important;
+// }
 
-#arrow-prev3{
-    display: none!important;
-}
-#arrow-next4{
-    display: none!important;
-}
+// #arrow-prev3{
+//     display: none!important;
+// }
+// #arrow-next4{
+//     display: none!important;
+// }
 

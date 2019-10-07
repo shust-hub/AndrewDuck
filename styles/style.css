@@ -172,7 +172,7 @@ header
   .header-phone .header-phone-item a {
     color: #9c172a; }
 
-@media (min-width: 360px) and (max-width: 899px) {
+@media (min-width: 299px) and (max-width: 899px) {
   .header {
     padding: 1vh 0 10vh; }
 
@@ -214,7 +214,7 @@ header
       .header-nav .head-nav-list ul li a {
         color: white;
         font-size: 1.125em; }
-  @media (min-width: 360px) and (max-width: 899px) {
+  @media (min-width: 299px) and (max-width: 899px) {
     .header-nav .header-logo {
       grid-column: 4/6;
       grid-row: 1; }
@@ -223,7 +223,15 @@ header
         bottom: 0; }
     .header-nav .head-nav-list {
       grid-column: 2/8;
-      font-size: 0.7em; } }
+      font-size: 0.7em; }
+      .header-nav .head-nav-list ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .header-nav .head-nav-list ul li {
+          margin: 0 10px; } }
 
 /*--------------------------------------------------------------
 footer
@@ -284,7 +292,7 @@ footer {
     .s-vita a:hover {
       text-decoration: underline; }
 
-@media (min-width: 360px) and (max-width: 899px) {
+@media (min-width: 299px) and (max-width: 899px) {
   .footer .footer-logo {
     grid-column: 4/6;
     grid-row: 1; }
@@ -419,7 +427,7 @@ form
           line-height: 28px; }
         #form-certificate .contact-form .contact-form__description, #form-certificate .contact-form .select {
           font-size: 0.8em; } }
-    @media (min-width: 360px) and (max-width: 899px) {
+    @media (min-width: 299px) and (max-width: 899px) {
       #form-certificate .contact-form {
         width: 85%;
         margin: 0 auto;
@@ -430,14 +438,14 @@ form
           line-height: 28px; }
         #form-certificate .contact-form .contact-form__description, #form-certificate .contact-form .select {
           font-size: 0.8em; }
+        #form-certificate .contact-form input[type="radio"] + label {
+          margin-right: 50px; }
         #form-certificate .contact-form ul {
           padding: 20px 14px 14px; }
-        #form-certificate .contact-form .contact-form input[type="radio"] + label {
-          margin-right: 25px; }
-          #form-certificate .contact-form .contact-form input[type="radio"] + label .contact-form__input_email,
-          #form-certificate .contact-form .contact-form input[type="radio"] + label .contact-form__input_tel,
-          #form-certificate .contact-form .contact-form input[type="radio"] + label .contact-form__input_name {
-            height: 35px; }
+        #form-certificate .contact-form .contact-form__input_email,
+        #form-certificate .contact-form .contact-form__input_tel,
+        #form-certificate .contact-form .contact-form__input_name {
+          height: 35px; }
         #form-certificate .contact-form .btn {
           width: 80%; } }
 
@@ -574,15 +582,3 @@ form
     margin: 0 auto; }
 #gift .slider-wrapper {
   border-right: 4px solid white; }
-
-#arrow-prev1 {
-  display: none !important; }
-
-#arrow-next2 {
-  display: none !important; }
-
-#arrow-prev3 {
-  display: none !important; }
-
-#arrow-next4 {
-  display: none !important; }
