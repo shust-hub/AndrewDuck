@@ -338,7 +338,7 @@ form
         align-self: center;
     background-color: #1a0500;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #9c172a;
     padding: 1vh 0 2vh;
     width: 30%;
     padding: 50px 70px;
@@ -348,7 +348,7 @@ form
       margin-bottom: 5px; }
     #form-certificate .contact-form ul {
       list-style: disc;
-      padding: 17px;
+      padding: 35px 17px 17px;
       margin: 0; }
     #form-certificate .contact-form hr {
       border: 1px solid rgba(255, 255, 255, 0.3);

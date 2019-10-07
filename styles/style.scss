@@ -396,11 +396,12 @@ form
     display: flex;
     font-weight: lighter;
     height: auto;
+
     .contact-form {
         align-self: center;
         background-color: #1a0500;
         color: white;
-        border: 1px solid rgba(255, 255, 255, .5);
+        border: 1px solid $MandarianOrange;
         padding: 1vh 0 2vh;
         width: 30%;
         // text-align: center;
@@ -413,7 +414,7 @@ form
         }
         ul {
             list-style: disc;
-            padding: 17px; 
+            padding: 35px 17px 17px; 
             margin:0;
         }  
         hr {
