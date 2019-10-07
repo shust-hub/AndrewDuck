@@ -274,7 +274,7 @@ header
                 flex-wrap: wrap;
                 justify-content: center;
                 li {
-                    margin: 0 10px;
+                    margin: 0 30px;
                 }
             }
         }
@@ -429,8 +429,8 @@ form
             margin-bottom: 5px;
         }
         ul {
-            list-style: disc;
-            padding: 35px 17px 17px; 
+            list-style: none;
+            padding: 35px 0 17px; 
             margin:0;
         }  
         hr {
@@ -464,6 +464,10 @@ form
             padding-left: 20px;
             margin-bottom: 15px;
             outline:none;
+        }
+
+        .contact-form__input-wrapper {
+            display: inline-flex; 
         }
 
         input::placeholder {
@@ -528,7 +532,7 @@ form
             }
             
             input[type="radio"] + label {
-                margin-right: 50px;
+                margin-right: 60%;
             }
 
             ul {
@@ -540,7 +544,9 @@ form
                     height: 35px;
             }
 
-
+            .contact-form__input-wrapper {
+                   display: block; 
+            }
 
             .btn {
                 width: 80%;

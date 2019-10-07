@@ -231,7 +231,7 @@ header
             -ms-flex-pack: center;
                 justify-content: center; }
         .header-nav .head-nav-list ul li {
-          margin: 0 10px; } }
+          margin: 0 30px; } }
 
 /*--------------------------------------------------------------
 footer
@@ -361,8 +361,8 @@ form
       font-size: 1.88em;
       margin-bottom: 5px; }
     #form-certificate .contact-form ul {
-      list-style: disc;
-      padding: 35px 17px 17px;
+      list-style: none;
+      padding: 35px 0 17px;
       margin: 0; }
     #form-certificate .contact-form hr {
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -388,6 +388,10 @@ form
       padding-left: 20px;
       margin-bottom: 15px;
       outline: none; }
+    #form-certificate .contact-form .contact-form__input-wrapper {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
     #form-certificate .contact-form input::-webkit-input-placeholder {
       color: rgba(255, 255, 255, 0.6); }
     #form-certificate .contact-form input:-ms-input-placeholder {
@@ -439,13 +443,15 @@ form
         #form-certificate .contact-form .contact-form__description, #form-certificate .contact-form .select {
           font-size: 0.8em; }
         #form-certificate .contact-form input[type="radio"] + label {
-          margin-right: 50px; }
+          margin-right: 60%; }
         #form-certificate .contact-form ul {
           padding: 20px 14px 14px; }
         #form-certificate .contact-form .contact-form__input_email,
         #form-certificate .contact-form .contact-form__input_tel,
         #form-certificate .contact-form .contact-form__input_name {
           height: 35px; }
+        #form-certificate .contact-form .contact-form__input-wrapper {
+          display: block; }
         #form-certificate .contact-form .btn {
           width: 80%; } }
 
