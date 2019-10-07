@@ -192,19 +192,28 @@ header
 .header-title {
     grid-column: 3/6;
     color: $MandarianOrange;
-    text-align: center;
     justify-self: center;
     font-size: 0.875em;
 
 }
 
-.header-phone {
+// .header-phone {
+//     grid-column: 6/8;
+//     justify-self: end;
+//     align-self: center;
+//     font-size: 0.81em;
+//     font-weight: 500;
+//     .header-phone-item a{ color: $MandarianOrange; }
+// }
+.btn-head {
     grid-column: 6/8;
     justify-self: end;
     align-self: center;
-    font-size: 0.81em;
-    font-weight: 500;
-    .header-phone-item a{ color: $MandarianOrange; }
+    color: $MandarianOrange;
+    border-top: 1px solid $MandarianOrange;
+    border-left: 1px solid $MandarianOrange;
+    border-bottom: 1px solid rgba(145, 24, 24, 0.5);
+    border-right: 1px solid rgba(145, 24, 24, 0.5);
 }
 
 @media (min-width: 299px) and (max-width: 899px)  { 
@@ -214,16 +223,24 @@ header
     .header-title {
         grid-column: 2/8;
         grid-row: 1;
+        text-align: center;
         br {
             content: "";
         }
     }
-    .header-phone {
+    // .header-phone {
+    //     grid-column: 2/8;
+    //     grid-row: 2;
+    //     text-align: center;
+    //     justify-self: center;
+    //     z-index: 999;
+    // }
+    .btn-head {
         grid-column: 2/8;
         grid-row: 2;
-        text-align: center;
         justify-self: center;
         z-index: 999;
+        margin-top: 20px;
     }
 }
 
@@ -312,8 +329,7 @@ footer {
     grid-column: 3/8;
     width: 75%;
     border-top: 1px solid rgba(255, 255, 255, .3);
-    margin-bottom: 20px;
-    margin-left: 80px;
+    margin: 20px 0 20px 80px;
 }
 .footer-logo {
     grid-column: 2/3;
@@ -326,6 +342,20 @@ footer {
         width: 100%;
     }
 }
+.footer-phone {
+    grid-column: 2/8;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 0.81em;
+    font-weight: 500;
+    display: inline-flex;
+    .footer-phone-item a { 
+        color: white;
+        margin: 0 20px 20px;
+     }
+}
+
 .copyright {
     margin-left: 80px;
     grid-column: 3/6;
@@ -352,20 +382,34 @@ footer {
         }  
         .copyright {
             grid-column: 2/5;
-            grid-row: 3;
+            grid-row: 4;
             margin: 0;
         }  
         .s-vita {
             grid-column: 5/8;
-            grid-row: 3;  
+            grid-row: 4;  
         }    
 
         .hr {
             grid-column: 2/8;
             width: 100%;
+            grid-row: 3; 
+            margin-left: 0;
+            margin-top: 20px;
+        }
+
+        .footer-phone {
+            grid-column: 2/8;
+            width: 100%;
             grid-row: 2; 
             margin-left: 0;
             margin-top: 20px;
+            display: block;
+            text-align: center;
+
+            .footer-phone-item a{
+                margin: 0 0 20px;
+            }
         }
     }
 
