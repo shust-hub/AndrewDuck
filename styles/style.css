@@ -157,7 +157,7 @@ header
   @media (min-width: 299px) and (max-width: 899px) {
     .grid-head {
       grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: 1fr 36px; } }
+      grid-template-rows: 1fr 50px 36px; } }
 
 .header {
   padding: 2vh 0;
@@ -193,7 +193,11 @@ header
       content: ""; }
 
   .btn-head {
-    display: none; } }
+    grid-column: 2/8;
+    grid-row: 2;
+    justify-self: center;
+    z-index: 999;
+    margin-top: 20px; } }
 .header-nav {
   background-color: #9c172a;
   color: white; }
