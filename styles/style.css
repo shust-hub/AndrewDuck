@@ -491,7 +491,7 @@ form
     .withSlider .description {
       width: 100%;
       border: none !important;
-      height: 50vh; }
+      height: 80vh; }
       .withSlider .description .content {
         -ms-flex-item-align: center;
             align-self: center;
