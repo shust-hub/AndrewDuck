@@ -13,17 +13,17 @@
 <body>
 
 <header>
-    <div class="header grid-head">
+    <div class="header grid-header" name="header">
         <div class="header-title">
-            <p> Мужская классическая одежда премиум класса по 
+            <p> Мужская одежда премиум класса по 
             индивидуальным меркам заказчика с 1998г.</p>
             <p>Накоплен богатый опыт 
-            персонального обслуживания самых взыскательных российских клиентов.
-            Уникальное собственное производство.</p>
+            персонального обслуживания самых взыскательных российских клиентов.</p>
+            <p>Уникальное собственное производство.</p>
         </div>
-            <a href="#form-certificate" class="btn btn-head">связаться с нами</a>
+            
     </div>
-    <div class="header-nav grid">
+    <div class="header-nav grid-header">
         <div class="header-logo">
             <a href="#"><img src="./img/logo.png" alt=""></a>
         </div>
@@ -33,6 +33,7 @@
                 <li><a href="#suits">КОСТЮМЫ</a></li>
                 <li><a href="#accessories">АКСЕССУАРЫ</a></li>
                 <li><a href="#gift">СЕРТИФИКАТЫ</a></li>
+                <li><a href="#gift">КОНТАКТЫ</a></li>
             </ul>
         </nav>
     </div>
@@ -44,11 +45,11 @@
             Удовольствие от созданной вручную <br>
                 мужской одежды премиум-класса <br>
                 по индивидуальным меркам</h1>
-        <p class="subtitle">С 1998 года изготавливаем классическую одежду по меркам клиента. <br>
+        <p class="subtitle">С 1998 года изготавливаем мужскую одежду по меркам клиента. <br>
                 Нашей компанией накоплен богатый опыт индивидуальной работы <br>
                 с самыми взыскательными российскими клиентами. </p>
         <a href="#gift" class="btn">
-            <p>ОБРАТИТЕ ВНИМАНИЕ НА КРАСОТУ НАШИХ СЕРТИФИКАТОВ</p>
+            ОБРАТИТЕ ВНИМАНИЕ НА КРАСОТУ НАШИХ СЕРТИФИКАТОВ
             
         </a>
     </div>
@@ -210,34 +211,42 @@
                 <label for="price-v3"><span></span>100 000 &#8381</label> 
             </div>
          </div>
-        <a class="contact-form__button btn" type="submit"><p>ОТПРАВИТЬ </p></a>
+        <a class="contact-form__button btn" type="submit">ОТПРАВИТЬ </a>
     </form>
 </section>
 
-<footer>
-	<div class="footer-nav grid">
+<footer name="footer-name">
+	<div class="footer-nav grid-footer">
         <nav class="footer-nav-list">
             <ul>
                 <li><a href="#shirts">СОРОЧКИ</a></li>
                 <li><a href="#suits">КОСТЮМЫ</a></li>
                 <li><a href="#accessories">АКСЕССУАРЫ</a></li>
                 <li><a href="#gift">СЕРТИФИКАТЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
             </ul>
         </nav>	
+        <div class="footer-phone" name="phone">
+            <div class="footer-phone-item">
+                <a href=""><i class="fas fa-phone-alt"></i> +7 499 288 05 27 &nbsp;&nbsp;&nbsp;&nbsp; Москва</a></div>
+            <div class="footer-phone-item phone-spb">
+                <a href=""><i class="fas fa-phone-alt"></i> +7 812 523 38 50 &nbsp;&nbsp;&nbsp;&nbsp;  Санкт-Петербург</a></div>
+        </div>
 	</div>
-    <div class="footer grid">
+    <div class="footer grid-footer">
     	<div class="footer-logo">
              <a href="/"><img src="img/footer-logo.png" alt=""></a>
         </div>
-        <div class="grid hr"> </div>
-        <div class="footer-phone" name="phone">
-                <div class="footer-phone-item"><a href=""><i class="fas fa-phone-alt"></i> +7 (499) 288 05 27 Москва</a></div>
-                <div class="footer-phone-item"><a href=""><i class="fas fa-phone-alt"></i> +7 (812) 523 38 50 Санкт-Петербург</a></div>
-        </div>
-		<div class="copyright">© 2019 ANDREW DUCK. Все права защищены.</div>
+        <div class="hr"> </div>
+		<div class="copyright">© 2019   ANDREW DUCK. &nbsp;&nbsp;&nbsp;&nbsp;  Все права защищены.</div>
 		<div class="s-vita">Создано в <a href="http://digital-svita.ru/">Digital-агенстве “S-Vita”</a></div>
     </div>	
 </footer>
+
+<div class="arrows-up-down">
+    <div class="arr-up"> <img src="./img/next.png"alt=""></div>
+    <div class="arr-down"> <img src="./img/next.png"alt=""></div>
+</div>
 
 <script src="jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
@@ -282,6 +291,34 @@
                 var sc = $(this).attr("href"),
                     dn = $(sc).offset().top;
                 $('html, body').animate({scrollTop: dn}, 1000);
+            });
+        });
+
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('.arr-up').fadeIn();
+                } else {
+                    $('.arr-up').fadeOut();              
+                }
+            });
+            $('.arr-up').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+
+        $(function() {
+            $(window).scroll(function() {
+                var $this = $(this);
+                if($this.scrollTop() != ($(document).height() - $(window).height())) {
+                    $('.arr-down').fadeIn();
+                    
+                } else {
+                    $('.arr-down').fadeOut();              
+                }
+            });
+            $('.arr-down').click(function() {
+            $('body,html').animate({scrollTop: $(document).height() + $(window).height()});
             });
         });
     });
