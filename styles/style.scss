@@ -177,9 +177,9 @@ header
 .grid-header {
     display: grid;
     grid-template-columns: 15% 243px repeat(11, 1fr) 15%;
-    @media (min-width: 899px) and (max-width: 1328px)  { 
-        grid-template-columns: 15% 180px repeat(11, 1fr) 15%;
-    }
+    // @media (min-width: 899px) and (max-width: 1328px)  { 
+    //     grid-template-columns: 15% 180px repeat(11, 1fr) 15%;
+    // }
     @media (min-width: 299px) and (max-width: 899px)  {  
         grid-template-columns: repeat(4,  1fr) 243px repeat(4,  1fr);;
         grid-template-rows: 100px 1fr;
