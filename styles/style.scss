@@ -499,6 +499,10 @@ form
         .contact-form__description {
             margin-bottom: 15px;
         }
+        .contact-form__description.description-center p{
+            text-align: center;
+        }
+        
         .select {
             text-align: left;
             // color: rgba(255, 255, 255, .6);
