@@ -425,13 +425,12 @@ footer {
         .footer-nav-list {
             grid-row: 1;
             grid-column: 2/9;
-            font-size: 0.7em;
             margin:  0;  
             ul {
                 flex-wrap: wrap;
                 justify-content: center;
                 li {
-                    margin: 0 15px;
+                    margin: 0 30px;
                 }
             }
         }
@@ -512,8 +511,13 @@ form
             margin-bottom: 10px;
         }
 
+        .btn-wrap {
+            width: 100%;
+        }
+        
         .btn{
-            width: 93%;
+            padding: 16px 0;
+            width: 100%;
             margin-top: 25px;
             text-align: center;
             background-color: #bba15f;
@@ -618,9 +622,6 @@ form
                    display: block; 
             }
 
-            .btn {
-                width: 80%;
-            }
         }
     }
 } 

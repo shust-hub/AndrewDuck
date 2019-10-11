@@ -337,7 +337,6 @@ footer {
   .footer-nav .footer-nav-list {
     grid-row: 1;
     grid-column: 2/9;
-    font-size: 0.7em;
     margin: 0; }
     .footer-nav .footer-nav-list ul {
       -ms-flex-wrap: wrap;
@@ -346,7 +345,7 @@ footer {
           -ms-flex-pack: center;
               justify-content: center; }
       .footer-nav .footer-nav-list ul li {
-        margin: 0 15px; } }
+        margin: 0 30px; } }
 /*--------------------------------------------------------------
 Первый блок
 --------------------------------------------------------------*/
@@ -409,8 +408,11 @@ form
       color: white;
       margin-top: 5px;
       margin-bottom: 10px; }
+    #form-certificate .contact-form .btn-wrap {
+      width: 100%; }
     #form-certificate .contact-form .btn {
-      width: 93%;
+      padding: 16px 0;
+      width: 100%;
       margin-top: 25px;
       text-align: center;
       background-color: #bba15f;
@@ -491,9 +493,7 @@ form
         #form-certificate .contact-form .contact-form__input_name {
           height: 35px; }
         #form-certificate .contact-form .contact-form__input-wrapper {
-          display: block; }
-        #form-certificate .contact-form .btn {
-          width: 80%; } }
+          display: block; } }
 
 /*--------------------------------------------------------------
 Общий стиль для блоков со слайдерами
