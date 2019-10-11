@@ -499,10 +499,11 @@ form
         .contact-form__description {
             margin-bottom: 15px;
         }
-        .contact-form__description.description-center p{
+        .contact-form__description.description-center{
             text-align: center;
+            margin-left: -5px;
         }
-        
+
         .select {
             text-align: left;
             // color: rgba(255, 255, 255, .6);
