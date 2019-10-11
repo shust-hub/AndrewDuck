@@ -150,6 +150,9 @@ section {
 /*--------------------------------------------------------------
 header
 --------------------------------------------------------------*/
+header {
+  margin-top: 25px; }
+
 @media (min-width: 299px) and (max-width: 899px) {
   header {
     margin-top: 60px; } }
@@ -192,7 +195,7 @@ header
       bottom: 0;
       width: 100%; }
   .header-nav .head-nav-list {
-    grid-column: 4/30; }
+    grid-column: 4/24; }
     .header-nav .head-nav-list ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -204,13 +207,20 @@ header
         color: white;
         font-size: 1.125em;
         margin-left: 55px; }
+  .header-nav .head-nav-contact {
+    grid-column: 4/19;
+    text-align: center; }
+    .header-nav .head-nav-contact .item-center {
+      margin: 0 auto; }
+      .header-nav .head-nav-contact .item-center a {
+        margin: 0; }
   @media (min-width: 299px) and (max-width: 899px) {
     .header-nav .header-logo {
       grid-column: 5/6;
       grid-row: 1; }
       .header-nav .header-logo a img {
         position: absolute;
-        bottom: 0; }
+        bottom: -1px; }
     .header-nav .head-nav-list {
       grid-column: 2/9; }
       .header-nav .head-nav-list ul {
@@ -658,3 +668,63 @@ form
       position: absolute;
       left: 15px;
       top: 60px; }
+
+#contact {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  font-size: 1.2em;
+  padding-top: 60px; }
+  #contact .title {
+    color: black;
+    font-size: 2.2em;
+    line-height: 1.2em; }
+    @media (min-width: 1322px) {
+      #contact .title br {
+        content: ""; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      #contact .title {
+        font-size: 2em; } }
+  #contact .city {
+    width: calc(50% - 16px); }
+    #contact .city p {
+      margin-bottom: 14px; }
+    #contact .city a {
+      color: black;
+      display: block;
+      margin-bottom: 18px; }
+    #contact .city i {
+      color: #9c172a;
+      margin-right: 10px;
+      font-size: 1em; }
+    #contact .city .photo-salon {
+      min-height: 238px;
+      width: 100%;
+      margin-top: 32px; }
+    #contact .city .map {
+      margin-top: 32px;
+      width: 100%; }
+      #contact .city .map iframe {
+        width: 100%;
+        min-height: 238px; }
+  @media (min-width: 299px) and (max-width: 899px) {
+    #contact .city {
+      width: 100%;
+      margin-bottom: 32px; } }
+
+#room1 {
+  background-image: url("../img/room1.png");
+  background-size: cover; }
+
+#room2 {
+  background-image: url("../img/room2.png");
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */
