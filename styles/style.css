@@ -690,7 +690,8 @@ form
 .parking {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  color: #9c172a; }
 
 #contact {
   height: auto;
