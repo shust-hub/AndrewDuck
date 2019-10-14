@@ -491,12 +491,12 @@ form
         width: 85%;
         margin: 0 auto;
         height: 90%;
-        padding: 25px 35px; }
+        padding: 25px 20px; }
         #form-certificate .contact-form .contact-form__title {
           font-size: 1.5em;
           line-height: 28px; }
         #form-certificate .contact-form .contact-form__description, #form-certificate .contact-form .select {
-          font-size: 0.8em; }
+          font-size: 1em; }
         #form-certificate .contact-form input[type="radio"] + label {
           margin-right: 60%; }
         #form-certificate .contact-form ul {
