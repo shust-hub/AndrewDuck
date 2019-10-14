@@ -165,7 +165,7 @@ header {
   grid-template-columns: 15% 243px repeat(21, 1fr); }
   @media (min-width: 899px) and (max-width: 1345px) {
     .grid-header {
-      grid-template-columns: 10% 200px repeat(21, 1fr); } }
+      grid-template-columns: 10% 243px repeat(21, 1fr); } }
   @media (min-width: 299px) and (max-width: 899px) {
     .grid-header {
       grid-template-columns: repeat(4, 1fr) 243px repeat(4, 1fr);
@@ -196,11 +196,13 @@ header {
         align-self: end;
     position: relative;
     height: 100%;
-    cursor: pointer; }
-    .header-nav .header-logo a img {
+    cursor: pointer;
+    background-color: white; }
+    .header-nav .header-logo a svg {
       position: absolute;
-      bottom: 0;
-      width: 100%; }
+      bottom: 11px;
+      width: 100%;
+      left: 20px; }
   .header-nav .head-nav-list {
     grid-column: 4/24;
     overflow-x: hidden; }
@@ -365,7 +367,8 @@ footer {
 #offer {
   background-image: url("../img/offer.png");
   background-size: cover;
-  display: grid; }
+  display: grid;
+  border-top: 2px solid white; }
   #offer .offer-content {
     -ms-flex-item-align: center;
         align-self: center; }
@@ -414,8 +417,7 @@ form
     #form-certificate .contact-form .contact-form__description {
       margin-bottom: 15px; }
     #form-certificate .contact-form .contact-form__description.description-center {
-      text-align: center;
-      width: 90%; }
+      text-align: center; }
     #form-certificate .contact-form .select {
       text-align: left;
       color: white;

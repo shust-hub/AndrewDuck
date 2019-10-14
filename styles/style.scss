@@ -190,7 +190,7 @@ header {
     grid-template-columns: 15% 243px repeat(21, 1fr);
 
     @media (min-width: 899px) and (max-width: 1345px)  {  
-        grid-template-columns: 10% 200px repeat(21, 1fr);
+        grid-template-columns: 10% 243px repeat(21, 1fr);
     }
     @media (min-width: 299px) and (max-width: 899px)  {  
         grid-template-columns: repeat(4,  1fr) 243px repeat(4,  1fr);;
@@ -232,10 +232,12 @@ header {
         position: relative;
         height: 100%;
         cursor: pointer;
-        a img{
+        background-color: white;
+        a svg{
             position: absolute;
-            bottom: 0;
+            bottom: 11px;
             width: 100%;
+            left: 20px;
         }
     }
 
@@ -465,6 +467,7 @@ footer {
     background-image: url('../img/offer.png');
     background-size: cover;
     display: grid;
+    border-top: 2px solid white;
     .offer-content {
         align-self: center;
         .btn {
@@ -521,7 +524,7 @@ form
         }
         .contact-form__description.description-center{
             text-align: center;
-            width: 90%;
+            // width: 90%;
         }
 
         .select {
