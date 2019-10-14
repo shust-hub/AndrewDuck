@@ -91,6 +91,10 @@ General styles
   padding-left: 15%;
   padding-right: 15%; }
 
+@media (min-width: 899px) and (max-width: 1345px) {
+  .container {
+    padding-left: 10%;
+    padding-right: 10%; } }
 .title {
   font-family: 'Prata', serif;
   font-weight: lighter;
@@ -158,7 +162,10 @@ header {
     margin-top: 60px; } }
 .grid-header {
   display: grid;
-  grid-template-columns: 15% 243px repeat(21, 1fr) 15%; }
+  grid-template-columns: 15% 243px repeat(21, 1fr); }
+  @media (min-width: 899px) and (max-width: 1345px) {
+    .grid-header {
+      grid-template-columns: 10% 200px repeat(21, 1fr); } }
   @media (min-width: 299px) and (max-width: 899px) {
     .grid-header {
       grid-template-columns: repeat(4, 1fr) 243px repeat(4, 1fr);
@@ -174,8 +181,8 @@ header {
   justify-self: start;
   font-size: 0.8em;
   z-index: 999;
-  text-align: center;
-  font-weight: 600; }
+  text-align: left;
+  font-weight: 500; }
 
 @media (min-width: 299px) and (max-width: 899px) {
   .header {
@@ -195,14 +202,15 @@ header {
       bottom: 0;
       width: 100%; }
   .header-nav .head-nav-list {
-    grid-column: 4/24; }
+    grid-column: 4/24;
+    overflow-x: hidden; }
     .header-nav .head-nav-list ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
       .header-nav .head-nav-list ul li a {
         color: white;
         font-size: 1.125em;
@@ -214,6 +222,11 @@ header {
       margin: 0 auto; }
       .header-nav .head-nav-contact .item-center a {
         margin: 0; }
+  @media (min-width: 899px) and (max-width: 1345px) {
+    .header-nav .head-nav-list ul li {
+      margin: 0 15px; }
+      .header-nav .head-nav-list ul li a {
+        margin: 0; } }
   @media (min-width: 299px) and (max-width: 899px) {
     .header-nav .header-logo {
       grid-column: 5/6;
@@ -230,7 +243,7 @@ header {
             -ms-flex-pack: center;
                 justify-content: center; }
         .header-nav .head-nav-list ul li {
-          margin: 0 30px; }
+          margin: 0 20px; }
           .header-nav .head-nav-list ul li a {
             margin: 0; } }
 
