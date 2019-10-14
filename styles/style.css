@@ -260,7 +260,7 @@ footer {
 
 .grid-footer {
   display: grid;
-  grid-template-columns: 15% 201px repeat(11, 1fr) 15%;
+  grid-template-columns: 15% 201px repeat(15, 1fr);
   grid-template-rows: 1fr 1fr; }
   @media (min-width: 299px) and (max-width: 899px) {
     .grid-footer {
@@ -284,10 +284,12 @@ footer {
               justify-content: space-between; }
       .footer-nav .footer-nav-list ul li a {
         color: white; }
-  @media (min-width: 899px) and (max-width: 1328px) {
-    .footer-nav .footer-nav-list ul {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+  @media (min-width: 899px) and (max-width: 1390px) {
+    .footer-nav .footer-nav-list {
+      grid-column: 4/16; }
+      .footer-nav .footer-nav-list ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 .footer-phone {
   grid-column: 8/12;
@@ -297,6 +299,9 @@ footer {
   font-weight: 500; }
   .footer-phone .footer-phone-item a {
     color: white; }
+  @media (min-width: 899px) and (max-width: 1390px) {
+    .footer-phone {
+      grid-column: 2/16; } }
   @media (min-width: 299px) and (max-width: 899px) {
     .footer-phone {
       grid-column: 2/9;
@@ -309,6 +314,9 @@ footer {
   grid-column: 4/12;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin-top: 20px; }
+  @media (min-width: 899px) and (max-width: 1390px) {
+    .hr {
+      grid-column: 4/16; } }
   @media (min-width: 299px) and (max-width: 899px) {
     .hr {
       grid-column: 2/9; } }
@@ -416,6 +424,8 @@ form
       border-bottom-width: 0; }
     #form-certificate .contact-form .contact-form__description {
       margin-bottom: 15px; }
+    #form-certificate .contact-form .contact-form__description.description-center {
+      text-align: center; }
     #form-certificate .contact-form .select {
       text-align: left;
       color: white;

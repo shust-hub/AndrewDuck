@@ -332,7 +332,7 @@ footer {
 
 .grid-footer {
     display: grid;
-    grid-template-columns: 15% 201px repeat(11, 1fr) 15%;
+    grid-template-columns: 15% 201px repeat(15, 1fr);
     grid-template-rows: 1fr 1fr;
     @media (min-width: 299px) and (max-width: 899px)  {  
         grid-template-columns: repeat(4,  1fr) 150px repeat(4,  1fr);;
@@ -358,8 +358,9 @@ footer {
         }
     }
 
-    @media (min-width: 899px) and (max-width: 1328px)  { 
+    @media (min-width: 899px) and (max-width: 1390px)  { 
         .footer-nav-list {
+            grid-column: 4/16;
             ul {
                 flex-wrap: wrap;
             }
@@ -377,6 +378,10 @@ footer {
         color: white;
      }
 
+     @media (min-width: 899px) and (max-width: 1390px)  { 
+        grid-column: 2/16;
+    }
+
      @media (min-width: 299px) and (max-width: 899px)  { 
         grid-column: 2/9;
         text-align: center;
@@ -391,6 +396,9 @@ footer {
     grid-column: 4/12;
     border-top: 1px solid rgba(255, 255, 255, .3);
     margin-top: 20px;
+    @media (min-width: 899px) and (max-width: 1390px)  { 
+        grid-column: 4/16;
+    }
     @media (min-width: 299px) and (max-width: 899px)  { 
         grid-column: 2/9;
     }
@@ -521,9 +529,9 @@ form
         .contact-form__description {
             margin-bottom: 15px;
         }
-        // .contact-form__description.description-center{
-        //     text-align: center;
-        // }
+        .contact-form__description.description-center{
+            text-align: center;
+        }
 
         .select {
             text-align: left;
