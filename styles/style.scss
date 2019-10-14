@@ -886,15 +886,24 @@ form
 // #arrow-next4{
 //     display: none!important;
 // }
-
+    .parking {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 1.4em;
+    }
 #contact {
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
     color: black;
     font-size: 1.2em;
     padding-top: 60px;
+
+.contact-wrap {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+
+}
 
     .title {
         color: black;
