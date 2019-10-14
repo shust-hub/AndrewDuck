@@ -502,7 +502,6 @@ form
         border: 1px solid #eecf82;
         padding: 1vh 0 2vh;
         width: 407px;
-        // text-align: center;
         padding: 50px 70px;
         margin: auto 0; 
 
@@ -524,12 +523,10 @@ form
         }
         .contact-form__description.description-center{
             text-align: center;
-            // width: 90%;
         }
 
         .select {
             text-align: left;
-            // color: rgba(255, 255, 255, .6);
             color: white;
             margin-top: 5px;
             margin-bottom: 10px;
@@ -603,17 +600,7 @@ form
             margin: 2px;
         }
 
-        @media (min-width: 999px) and (max-width: 1381px)  {  
-            width: 40%; 
-            .contact-form__title {
-                font-size: 1.7em;
-                line-height: 28px;
 
-            }
-            .contact-form__description, .select {
-                font-size: 0.8em;
-            }
-        }
         @media (min-width: 299px) and (max-width: 899px)  {  
             width: 85%; 
             margin: 0 auto;

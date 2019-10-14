@@ -480,14 +480,6 @@ form
       border-radius: 100%;
       position: absolute;
       margin: 2px; }
-    @media (min-width: 999px) and (max-width: 1381px) {
-      #form-certificate .contact-form {
-        width: 40%; }
-        #form-certificate .contact-form .contact-form__title {
-          font-size: 1.7em;
-          line-height: 28px; }
-        #form-certificate .contact-form .contact-form__description, #form-certificate .contact-form .select {
-          font-size: 0.8em; } }
     @media (min-width: 299px) and (max-width: 899px) {
       #form-certificate .contact-form {
         width: 85%;
