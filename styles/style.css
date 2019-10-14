@@ -182,7 +182,8 @@ header {
   font-size: 0.8em;
   z-index: 999;
   text-align: left;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 @media (min-width: 299px) and (max-width: 899px) {
   .header {
