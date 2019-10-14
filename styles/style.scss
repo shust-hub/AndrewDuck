@@ -235,11 +235,12 @@ header {
         height: 100%;
         cursor: pointer;
         background-color: white;
-        a svg{
+        a img{
             position: absolute;
             bottom: 11px;
-            width: 100%;
+            width: 82%;
             left: 21px;
+            
         }
     }
 
@@ -290,7 +291,9 @@ header {
             grid-row: 1;
             a img{
                 position: absolute;
-                bottom: -1px;
+                bottom: 11px;
+                width: 82%;
+                left: 21px;
             }
         }
 
