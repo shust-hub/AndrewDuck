@@ -424,8 +424,6 @@ form
       border-bottom-width: 0; }
     #form-certificate .contact-form .contact-form__description {
       margin-bottom: 15px; }
-    #form-certificate .contact-form .contact-form__description.description-center {
-      text-align: center; }
     #form-certificate .contact-form .select {
       text-align: left;
       color: white;
