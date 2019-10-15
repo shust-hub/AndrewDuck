@@ -102,8 +102,8 @@ General styles
 }
 @media (min-width: 899px) and (max-width: 1345px)  {  
     .container {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 2%;
     }
 }
 
@@ -191,7 +191,7 @@ header {
     grid-template-columns: 15% 243px repeat(21, 1fr);
 
     @media (min-width: 899px) and (max-width: 1345px)  {  
-        grid-template-columns: 10% 180px repeat(21, 1fr);
+        grid-template-columns: 5% 200px repeat(21, 1fr);
     }
     @media (min-width: 299px) and (max-width: 899px)  {  
         grid-template-columns: repeat(4,  1fr) 243px repeat(4,  1fr);;
@@ -237,7 +237,7 @@ header {
         background-color: white;
         a img{
             position: absolute;
-            bottom: 11px;
+            bottom: 15px;
             width: 200px;
             left: 50%;
             margin-left: -100px;
@@ -246,9 +246,9 @@ header {
 
         @media (min-width: 899px) and (max-width: 1345px)  {
             a img{
-                width: 148px;
+                width: 180px;
                 left: 50%;
-                margin-left: -74px;
+                margin-left: -90px;
             }
         }
     }
