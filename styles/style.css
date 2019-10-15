@@ -3,15 +3,6 @@
   font-family: 'Montserrat', sans-serif; }
 @font-face {
   font-family: 'Prata', serif; }
-@media screen and (min-height: 980px) and (max-height: 2000px) {
-  section {
-    height: auto !important; }
-
-  .description {
-    height: 47vh !important; }
-
-  .slider-wrapper {
-    height: 47vh !important; } }
 body {
   margin: 0;
   background-color: white; }
@@ -121,7 +112,7 @@ General styles
         content: ""; } }
 
 section {
-  height: 80vh;
+  height: auto;
   border-bottom: 4px solid white;
   border-top: 4px solid white;
   overflow: hidden; }
@@ -131,6 +122,12 @@ section {
       border-bottom: 2px solid white;
       border-top: 2px solid white; } }
 
+@media screen and (min-height: 980px) and (max-height: 3000px) {
+  .description {
+    height: 47vh !important; }
+
+  .slider-wrapper {
+    height: 47vh !important; } }
 .btn {
   display: inline-block;
   font-size: 0.750em;
@@ -175,6 +172,9 @@ header {
   padding: 2vh 0;
   background-color: white; }
 
+@media (min-width: 299px) and (max-width: 899px) {
+  .header {
+    display: none; } }
 .header-title {
   grid-column: 4/22;
   color: #9c172a;
@@ -185,9 +185,6 @@ header {
   font-weight: 500;
   text-transform: uppercase; }
 
-@media (min-width: 299px) and (max-width: 899px) {
-  .header {
-    display: none; } }
 .header-nav {
   background-color: #9c172a;
   color: white; }
@@ -387,7 +384,7 @@ footer {
         align-self: center; }
     #offer .offer-content .btn {
       margin: 25px 0 30px; }
-  @media (min-width: 299px) and (max-width: 1999px) {
+  @media (min-width: 299px) and (max-width: 3999px) {
     #offer {
       padding-top: 40px;
       min-height: 80vh; } }
@@ -579,6 +576,10 @@ form
       .withSlider .slider-wrapper .slider-item img {
         width: 100%;
         height: auto; } }
+@media (min-width: 1955px) and (max-width: 8000px) {
+  .withSlider .slider-wrapper .slider-item img {
+    width: 100%;
+    height: auto; } }
 /*--------------------------------------------------------------
 Стрелки для слайдера
 --------------------------------------------------------------*/
@@ -644,6 +645,9 @@ form
   border-left: 4px solid white; }
 #accessories .slider-wrapper img {
   width: auto; }
+@media (min-width: 1955px) and (max-width: 8000px) {
+  #accessories .slider-wrapper img {
+    width: 100%; } }
 
 #gift .description {
   background-image: url("../img/gift.png");
