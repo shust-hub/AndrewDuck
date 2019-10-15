@@ -165,7 +165,7 @@ header {
   grid-template-columns: 15% 243px repeat(21, 1fr); }
   @media (min-width: 899px) and (max-width: 1345px) {
     .grid-header {
-      grid-template-columns: 10% 243px repeat(21, 1fr); } }
+      grid-template-columns: 10% 180px repeat(21, 1fr); } }
   @media (min-width: 299px) and (max-width: 899px) {
     .grid-header {
       grid-template-columns: repeat(4, 1fr) 243px repeat(4, 1fr);
@@ -202,8 +202,14 @@ header {
     .header-nav .header-logo a img {
       position: absolute;
       bottom: 11px;
-      width: 82%;
-      left: 21px; }
+      width: 200px;
+      left: 50%;
+      margin-left: -100px; }
+    @media (min-width: 899px) and (max-width: 1345px) {
+      .header-nav .header-logo a img {
+        width: 148px;
+        left: 50%;
+        margin-left: -74px; } }
   .header-nav .head-nav-list {
     grid-column: 4/24;
     overflow-x: hidden; }
@@ -234,11 +240,6 @@ header {
     .header-nav .header-logo {
       grid-column: 5/6;
       grid-row: 1; }
-      .header-nav .header-logo a img {
-        position: absolute;
-        bottom: 11px;
-        width: 82%;
-        left: 21px; }
     .header-nav .head-nav-list {
       grid-column: 2/9; }
       .header-nav .head-nav-list ul {
@@ -326,6 +327,7 @@ footer {
 
 .footer-logo {
   grid-column: 2/3;
+  grid-row: 1;
   -ms-flex-item-align: end;
       align-self: end;
   position: relative;
