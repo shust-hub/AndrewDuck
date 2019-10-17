@@ -26,7 +26,7 @@
     <div class="header-nav grid-header">
         <div class="header-logo">
             <a href="index.html">
-                <img src="img/logo.svg" alt="">
+                <img src="img/logo_duck.svg" alt="">
             </a>
         </div>
         <nav class="head-nav-list">
@@ -256,7 +256,9 @@
 
 <script src="jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
-    <script>
+
+ <script>
+     "use strict";
     $(document).ready(function(){
         $('#sliderShirts').slick({
             infinite: true,
@@ -294,7 +296,7 @@
         $(function(){
             $('a[href^="#"]').on('click', function(event) {
                 event.preventDefault();
-                var sc = $(this).attr("href"),
+                const sc = $(this).attr("href"),
                     dn = $(sc).offset().top;
                 $('html, body').animate({scrollTop: dn}, 1000);
             });
@@ -315,7 +317,7 @@
 
         $(function() {
             $(window).scroll(function() {
-                var $this = $(this);
+                let $this = $(this);
                 if($this.scrollTop() != ($(document).height() - $(window).height())) {
                     $('.arr-down').fadeIn();
                     
@@ -324,10 +326,10 @@
                 }
             });
             $('.arr-down').click(function() {
-            $('body,html').animate({scrollTop: $(document).height() + $(window).height()});
+            $('body,html').animate({scrollTop: $(document).height() + $(window).height()},800);
             });
         });
     });
     </script>
 </body>
-</html>
+</html> 
