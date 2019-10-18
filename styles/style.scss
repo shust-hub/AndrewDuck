@@ -9,6 +9,7 @@
 body {
     margin: 0;
     background-color: white;
+    min-width: 299px;
 }
 
 img {
@@ -970,4 +971,200 @@ form
 #room2 {
     background-image: url("../img/room2.png");
     background-size: cover;
+}
+
+.payment-container {
+    display: flex;
+    color: black;  
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
+    margin: 4% 5% 1%;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    .payment-form__title {
+        color: black;
+        font-family: 'Prata', serif;
+        font-size: 2.188em;
+        padding: 0;
+        line-height: 58px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .payment-container__img {
+        width: 100vw;
+
+        .img__form-img {
+            width: 100%;
+            display: none;
+            
+        }
+        .img__logo img{
+            width: 200px;
+            margin: 0 auto 40px;
+
+        }
+    }
+    .payment-container__payment-form{
+        width: 100%;
+
+        .btn-wrap {
+            text-align: center;
+        }
+
+        .payment-form__button {
+            background-color: #bba15f;
+            cursor: pointer;
+            padding: 20px 0;
+            width: 100%;
+            max-width: 377px;
+        }
+
+        .payment-form__input-wrapper{
+            .payment-form__input {
+                display: flex;
+                width: 100%;
+                height: 39px;
+                border: 1px solid #b2b2b2;
+                margin-bottom: 20px;
+                padding-left: 20px;
+                box-sizing: border-box;
+            } 
+
+        }
+        .payment-form__radio-wrapper {
+            margin-bottom: 20px;
+            .radio {
+                font-family: 'Prata', serif;
+                display: inline-flex;
+                margin-right: 50px;
+
+                input::placeholder {
+                    color: rgba(255, 255, 255, .6);
+                }
+        
+                input[type="radio"] {
+                    display:none;
+                }
+                
+                input[type="radio"] + label {
+                    color: black;
+                    font-family: 'Prata', serif;
+                }
+                
+                input[type="radio"] + label span {
+                    display:inline-block;
+                    width:10px;
+                    height:10px;
+                    margin:-5px 10px 0 0;
+                    vertical-align:middle;
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    cursor:pointer;
+                }
+                
+                input[type="radio"]:checked + label span::after {
+                    content: '';
+                    background-color: black;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100%;
+                    position: absolute;
+                    margin: 2px;
+                }
+
+                input[type="price"] {
+                    color: black;
+                    border: 1px solid #b2b2b2;
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .checks {
+/* прячем input checkbox */
+            margin-bottom: 20px;
+            input[type="checkbox"] {
+            display: none;
+            }
+            
+            /* стили для метки */
+            label {
+                color: #000;
+                cursor: default;
+                padding: 10px 0;
+                vertical-align: middle;
+                font-size: 0.875em;
+            }
+            
+            /* формируем внешний вид чекбокса в псевдоэлементе before */
+            label:before {
+            content: " ";
+            color: #000;
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+            text-align: center;
+            text-indent: 0px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid black;
+            border-image: initial;
+            vertical-align: middle;
+            line-height: 15px;
+            }
+            
+            /* вариации внешнего вида в зав-ти от статуса checkbox */
+            /* checked */
+            input:checked + label:before {
+                content: "\2714";
+            background: black;
+            color:white;
+            }
+            /* disabled */
+            input:disabled + label:before {
+            background: #eee;
+            color: #aaa;
+            }
+       
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .payment-container {
+        flex-wrap: nowrap;
+        padding: 40px;
+    }
+
+    .payment-container__img {
+        width: 50vw;
+
+        .img__form-img {
+            display: block!important;
+        }
+
+    }
+
+    .payment-container__payment-form {
+        width: 50vw;
+        padding-left: 40px;
+
+        .payment-form__input-wrapper{
+            display: flex;
+            margin-right: -20px;
+
+            .payment-form__input {
+                width: 50%;
+                margin-right: 20px;
+                height: 59px;
+            }
+
+            .radio {
+                display: inline;
+            }
+        }
+    }
+      
 }

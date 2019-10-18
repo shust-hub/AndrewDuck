@@ -5,7 +5,8 @@
   font-family: 'Prata', serif; }
 body {
   margin: 0;
-  background-color: white; }
+  background-color: white;
+  min-width: 299px; }
 
 img {
   display: block;
@@ -758,5 +759,161 @@ form
 #room2 {
   background-image: url("../img/room2.png");
   background-size: cover; }
+
+.payment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
+  margin: 4% 5% 1%;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .payment-container .payment-form__title {
+    color: black;
+    font-family: 'Prata', serif;
+    font-size: 2.188em;
+    padding: 0;
+    line-height: 58px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .payment-container .payment-container__img {
+    width: 100vw; }
+    .payment-container .payment-container__img .img__form-img {
+      width: 100%;
+      display: none; }
+    .payment-container .payment-container__img .img__logo img {
+      width: 200px;
+      margin: 0 auto 40px; }
+  .payment-container .payment-container__payment-form {
+    width: 100%; }
+    .payment-container .payment-container__payment-form .btn-wrap {
+      text-align: center; }
+    .payment-container .payment-container__payment-form .payment-form__button {
+      background-color: #bba15f;
+      cursor: pointer;
+      padding: 20px 0;
+      width: 100%;
+      max-width: 377px; }
+    .payment-container .payment-container__payment-form .payment-form__input-wrapper .payment-form__input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 39px;
+      border: 1px solid #b2b2b2;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .payment-container .payment-container__payment-form .payment-form__radio-wrapper {
+      margin-bottom: 20px; }
+      .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio {
+        font-family: 'Prata', serif;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 50px; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"] {
+          display: none; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"] + label {
+          color: black;
+          font-family: 'Prata', serif; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"] + label span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: -5px 10px 0 0;
+          vertical-align: middle;
+          border: 1px solid black;
+          border-radius: 100%;
+          cursor: pointer; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"]:checked + label span::after {
+          content: '';
+          background-color: black;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          position: absolute;
+          margin: 2px; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="price"] {
+          color: black;
+          border: 1px solid #b2b2b2;
+          padding-left: 10px; }
+    .payment-container .payment-container__payment-form .checks {
+      /* прячем input checkbox */
+      margin-bottom: 20px;
+      /* стили для метки */
+      /* формируем внешний вид чекбокса в псевдоэлементе before */
+      /* вариации внешнего вида в зав-ти от статуса checkbox */
+      /* checked */
+      /* disabled */ }
+      .payment-container .payment-container__payment-form .checks input[type="checkbox"] {
+        display: none; }
+      .payment-container .payment-container__payment-form .checks label {
+        color: #000;
+        cursor: default;
+        padding: 10px 0;
+        vertical-align: middle;
+        font-size: 0.875em; }
+      .payment-container .payment-container__payment-form .checks label:before {
+        content: " ";
+        color: #000;
+        display: inline-block;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        -o-border-image: initial;
+           border-image: initial;
+        vertical-align: middle;
+        line-height: 15px; }
+      .payment-container .payment-container__payment-form .checks input:checked + label:before {
+        content: "\2714";
+        background: black;
+        color: white; }
+      .payment-container .payment-container__payment-form .checks input:disabled + label:before {
+        background: #eee;
+        color: #aaa; }
+
+@media (min-width: 769px) {
+  .payment-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 40px; }
+
+  .payment-container__img {
+    width: 50vw; }
+    .payment-container__img .img__form-img {
+      display: block !important; }
+
+  .payment-container__payment-form {
+    width: 50vw;
+    padding-left: 40px; }
+    .payment-container__payment-form .payment-form__input-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: -20px; }
+      .payment-container__payment-form .payment-form__input-wrapper .payment-form__input {
+        width: 50%;
+        margin-right: 20px;
+        height: 59px; }
+      .payment-container__payment-form .payment-form__input-wrapper .radio {
+        display: inline; } }
 
 /*# sourceMappingURL=style.css.map */
