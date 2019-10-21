@@ -759,7 +759,7 @@ form
       .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio {
         font-family: 'Prata', serif;
         display: inline-flex;
-        margin-right: 40px; }
+        margin-right: 35px; }
         .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:focus, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:active {
           color: black;
           border: 1px solid #b2b2b2;
