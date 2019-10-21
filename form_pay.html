@@ -24,41 +24,41 @@
          </div>
 
 
-        <form class="payment-container__payment-form" id="payment-form" method="POST">
+        <form class="payment-container__payment-form" id="payment-form" >
             <div class="payment-form__title">БЛАНК ЗАКАЗА</div>
 
             <div class="payment-form__input-wrapper">
+                <input name="firstName" type="text" 
+                        class="payment-form__input payment-form__input_first-name" 
+                        placeholder="ИМЯ" >
 
-                <input name="first-name" type="text" 
-            class="payment-form__input payment-form__input_first-name" placeholder="ИМЯ" required>
-
-                <input name="second-name" type="text" 
-             class="payment-form__input payment-form__input_second-name" placeholder="ФАМИЛИЯ" required>
-
+                <input name="secondName" type="text" 
+                        class="payment-form__input payment-form__input_second-name" 
+                        placeholder="ФАМИЛИЯ" >
             </div>
 
             <div class="payment-form__input-wrapper">
                 <input name="tel" type="tel" 
-             class="payment-form__input payment-form__input_tel" placeholder="ТЕЛЕФОН" required autocomplete="tel">
+                 class="payment-form__input payment-form__input_tel" 
+                 placeholder="ТЕЛЕФОН" >
         
                 <input name="email" type="email" 
-             class="payment-form__input payment-form__input_email" 
-             placeholder="E-MAIL" 
-             required autocomplete="email"
-             >
+                class="payment-form__input payment-form__input_email" 
+                placeholder="E-MAIL" 
+                >
             </div>
 
-        <p class="payment-form__description">Город:</p>           
-        <div class="payment-form__radio-wrapper select"> 
-           <div class="radio">
-               <input class="city" type="radio" name="city[]" value="Москва" id="city-v1"/>
-               <label for="city-v1"><span></span>Москва </label>
-           </div>
-           <div class="radio">            
-               <input class="city" type="radio" name="city[]" value="СПб" id="city-v2"/>
-               <label for="city-v2"><span></span>Санкт-Петербург</label> 
-           </div>
-        </div>
+            <p class="payment-form__description">Город:</p>           
+            <div class="payment-form__radio-wrapper select"> 
+                <div class="radio">
+                    <input class="city" type="radio" name="city[]" value="Москва" id="city-v1"/>
+                    <label for="city-v1"><span></span>Москва </label>
+                </div>
+                <div class="radio">            
+                    <input class="city" type="radio" name="city[]" value="СПб" id="city-v2"/>
+                    <label for="city-v2"><span></span>Санкт-Петербург</label> 
+                </div>
+            </div>
 
         <p class="payment-form__description">Выберите номинал сертификата или введите сумму на Ваш выбор:</p>             
         <div class="payment-form__radio-wrapper select"> 
@@ -128,26 +128,27 @@
 
          <div class="checks">
             <div class="checkbox">
-                <input type="checkbox" id="check-konf" checked>
+                <input type="checkbox" id="check-konf" name="checkKonf" checked>
                 <label for="check-konf">Политика конфиденциальности</label>
              </div>
              <div class="checkbox">
-                <input type="checkbox" id="check-oferta" checked>
+                <input type="checkbox" id="check-oferta" name="checkOferta" checked>
                 <label for="check-oferta">Договор оферта</label>
             </div>
         </div>
 
         <div class="btn-wrap">
-            <button class="payment-form__button btn" type="submit">ОТПРАВИТЬ</button>
+            <button type="button" class="payment-form__button btn" onclick='validateForm(this.form);'>ОТПРАВИТЬ</button>
         </div>
 
         </form>
     </div>
+
+    
     
 </section>
-
 <script src="jquery-3.4.1.min.js"></script>
-<script src="pay_form.js"></script>
+<script type="text/javascript" src="order.js"></script>
 
 </body>
 </html>
