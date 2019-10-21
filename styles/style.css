@@ -73,8 +73,7 @@ label:focus,
 .btn.active {
   outline: 0px !important;
   -webkit-appearance: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important; }
+  box-shadow: none !important; }
 
 /*--------------------------------------------------------------
 General styles
@@ -139,7 +138,6 @@ section {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   color: white;
   text-transform: uppercase;
-  -webkit-transition: 0.5s;
   transition: 0.5s; }
   .btn p {
     text-align: center; }
@@ -191,8 +189,7 @@ header {
   color: white; }
   .header-nav .header-logo {
     grid-column: 2;
-    -ms-flex-item-align: end;
-        align-self: end;
+    align-self: end;
     position: relative;
     height: 110%;
     cursor: pointer;
@@ -212,12 +209,9 @@ header {
     grid-column: 4/24;
     overflow-x: hidden; }
     .header-nav .head-nav-list ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       width: 100%;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+      flex-wrap: nowrap; }
       .header-nav .head-nav-list ul li a {
         color: white;
         font-size: 1.125em;
@@ -241,11 +235,8 @@ header {
     .header-nav .head-nav-list {
       grid-column: 2/9; }
       .header-nav .head-nav-list ul {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
+        flex-wrap: wrap;
+        justify-content: center; }
         .header-nav .head-nav-list ul li {
           margin: 0 20px; }
           .header-nav .head-nav-list ul li a {
@@ -276,22 +267,17 @@ footer {
     grid-column: 4/12;
     grid-row: 1; }
     .footer-nav .footer-nav-list ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       width: 100%;
       margin: 0;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+      justify-content: space-between; }
       .footer-nav .footer-nav-list ul li a {
         color: white; }
   @media (min-width: 899px) and (max-width: 1390px) {
     .footer-nav .footer-nav-list {
       grid-column: 4/16; }
       .footer-nav .footer-nav-list ul {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+        flex-wrap: wrap; } }
 
 .footer-phone {
   grid-column: 8/12;
@@ -326,8 +312,7 @@ footer {
 .footer-logo {
   grid-column: 2/3;
   grid-row: 1;
-  -ms-flex-item-align: end;
-      align-self: end;
+  align-self: end;
   position: relative;
   height: 100%;
   cursor: pointer; }
@@ -365,11 +350,8 @@ footer {
     grid-column: 2/9;
     margin: 0; }
     .footer-nav .footer-nav-list ul {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .footer-nav .footer-nav-list ul li {
         margin: 0 30px; } }
 /*--------------------------------------------------------------
@@ -381,8 +363,7 @@ footer {
   display: grid;
   border-top: 2px solid white; }
   #offer .offer-content {
-    -ms-flex-item-align: center;
-        align-self: center; }
+    align-self: center; }
     #offer .offer-content .btn {
       margin: 25px 0 30px; }
   @media (min-width: 299px) and (max-width: 3999px) {
@@ -400,14 +381,11 @@ form
   background-size: auto 100%;
   background-repeat: no-repeat;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-weight: lighter;
   height: auto; }
   #form-certificate .contact-form {
-    -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
     background-color: #1a0500;
     color: white;
     border: 1px solid #eecf82;
@@ -455,15 +433,7 @@ form
       margin-bottom: 15px;
       outline: none; }
     #form-certificate .contact-form .contact-form__input-wrapper {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex; }
-    #form-certificate .contact-form input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
-    #form-certificate .contact-form input:-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
-    #form-certificate .contact-form input::-ms-input-placeholder {
-      color: rgba(255, 255, 255, 0.6); }
     #form-certificate .contact-form input::placeholder {
       color: rgba(255, 255, 255, 0.6); }
     #form-certificate .contact-form input[type="radio"] {
@@ -515,25 +485,19 @@ form
 Общий стиль для блоков со слайдерами
 --------------------------------------------------------------*/
 .withSlider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   width: 100%;
   overflow: hidden; }
   .withSlider .description {
     width: 60%;
     height: 80vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0 4vw;
     background-size: cover;
     z-index: 999; }
     .withSlider .description .content {
-      -ms-flex-item-align: end;
-          align-self: flex-end; }
+      align-self: flex-end; }
       .withSlider .description .content .title {
         margin-bottom: 0; }
       .withSlider .description .content p {
@@ -557,15 +521,13 @@ form
 
 @media (min-width: 300px) and (max-width: 750px) {
   .withSlider {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    flex-wrap: wrap; }
     .withSlider .description {
       width: 100%;
       border: none !important;
       height: 80vh; }
       .withSlider .description .content {
-        -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
         padding: 20px; }
         .withSlider .description .content .btn {
           margin-bottom: 0px; }
@@ -594,7 +556,6 @@ form
   color: white;
   font-size: 5em;
   font-weight: 300;
-  -webkit-transition: 0.5s;
   transition: 0.5s; }
   .slider-arrows img {
     width: auto;
@@ -607,8 +568,7 @@ form
 
 .arrow-prev {
   left: -40px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg); }
   .arrow-prev img {
     padding-left: 30px; }
 
@@ -670,7 +630,6 @@ form
   height: 100px;
   z-index: 9999;
   cursor: pointer;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border: 1px solid white;
   border-radius: 20px; }
@@ -678,8 +637,7 @@ form
     width: 45px;
     height: 50px; }
     .arrows-up-down .arr-up img {
-      -webkit-transform: rotate(-90deg);
-              transform: rotate(-90deg);
+      transform: rotate(-90deg);
       width: 15px;
       position: absolute;
       left: 15px;
@@ -688,8 +646,7 @@ form
     width: 45px;
     height: 50px; }
     .arrows-up-down .arr-down img {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
+      transform: rotate(90deg);
       width: 15px;
       position: absolute;
       left: 15px;
@@ -707,14 +664,9 @@ form
   font-size: 1.2em;
   padding-top: 60px; }
   #contact .contact-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
   #contact .title {
     color: black;
     font-size: 2.1em;
@@ -761,17 +713,13 @@ form
   background-size: cover; }
 
 .payment-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: black;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
-          box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
-  margin: 4% 5% 1%;
+  box-shadow: 0px 0px 13.58px 0.42px rgba(0, 0, 0, 0.11);
+  margin: 3% 5% 1%;
   padding: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
   .payment-container .payment-form__title {
     color: black;
     font-family: 'Prata', serif;
@@ -799,32 +747,26 @@ form
       width: 100%;
       max-width: 377px; }
     .payment-container .payment-container__payment-form .payment-form__input-wrapper .payment-form__input {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       width: 100%;
-      height: 39px;
+      height: 48px;
       border: 1px solid #b2b2b2;
       margin-bottom: 20px;
       padding-left: 20px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      box-sizing: border-box; }
     .payment-container .payment-container__payment-form .payment-form__radio-wrapper {
       margin-bottom: 20px; }
       .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio {
         font-family: 'Prata', serif;
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
         display: inline-flex;
-        margin-right: 50px; }
-        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::-webkit-input-placeholder {
-          color: rgba(255, 255, 255, 0.6); }
-        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:-ms-input-placeholder {
-          color: rgba(255, 255, 255, 0.6); }
-        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::-ms-input-placeholder {
-          color: rgba(255, 255, 255, 0.6); }
-        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::placeholder {
-          color: rgba(255, 255, 255, 0.6); }
+        margin-right: 40px; }
+        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:focus, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:active {
+          color: black;
+          border: 1px solid #b2b2b2;
+          padding-left: 10px;
+          font-family: 'Prata', serif; }
+          .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input::placeholder, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:focus::placeholder, .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input:active::placeholder {
+            color: #b2b2b2; }
         .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"] {
           display: none; }
         .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="radio"] + label {
@@ -847,10 +789,6 @@ form
           border-radius: 100%;
           position: absolute;
           margin: 2px; }
-        .payment-container .payment-container__payment-form .payment-form__radio-wrapper .radio input[type="price"] {
-          color: black;
-          border: 1px solid #b2b2b2;
-          padding-left: 10px; }
     .payment-container .payment-container__payment-form .checks {
       /* прячем input checkbox */
       margin-bottom: 20px;
@@ -878,8 +816,7 @@ form
         width: 15px;
         height: 15px;
         border: 1px solid black;
-        -o-border-image: initial;
-           border-image: initial;
+        border-image: initial;
         vertical-align: middle;
         line-height: 15px; }
       .payment-container .payment-container__payment-form .checks input:checked + label:before {
@@ -892,8 +829,7 @@ form
 
 @media (min-width: 769px) {
   .payment-container {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     padding: 40px; }
 
   .payment-container__img {
@@ -905,8 +841,6 @@ form
     width: 50vw;
     padding-left: 40px; }
     .payment-container__payment-form .payment-form__input-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       margin-right: -20px; }
       .payment-container__payment-form .payment-form__input-wrapper .payment-form__input {
@@ -914,6 +848,7 @@ form
         margin-right: 20px;
         height: 59px; }
       .payment-container__payment-form .payment-form__input-wrapper .radio {
-        display: inline; } }
+        display: inline;
+        margin-right: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

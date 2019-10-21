@@ -23,21 +23,28 @@
          </div>
 
 
-        <form class="payment-container__payment-form" id="payment-form" method="POST" enctype="multipart/form-data">
+        <form class="payment-container__payment-form" id="payment-form" method="POST">
             <div class="payment-form__title">БЛАНК ЗАКАЗА</div>
 
             <div class="payment-form__input-wrapper">
+
                 <input name="first-name" type="text" 
-            class="payment-form__input payment-form__input_first-name" placeholder="ИМЯ">
+            class="payment-form__input payment-form__input_first-name" placeholder="ИМЯ" required>
+
                 <input name="second-name" type="text" 
-             class="payment-form__input payment-form__input_second-name" placeholder="ФАМИЛИЯ">
+             class="payment-form__input payment-form__input_second-name" placeholder="ФАМИЛИЯ" required>
+
             </div>
+
             <div class="payment-form__input-wrapper">
                 <input name="tel" type="tel" 
-             class="payment-form__input payment-form__input_tel" placeholder="ТЕЛЕФОН">
+             class="payment-form__input payment-form__input_tel" placeholder="ТЕЛЕФОН" required autocomplete="tel">
         
                 <input name="email" type="email" 
-             class="payment-form__input payment-form__input_email" placeholder="E-MAIL">
+             class="payment-form__input payment-form__input_email" 
+             placeholder="E-MAIL" 
+             required autocomplete="email"
+             >
             </div>
 
         <p class="payment-form__description">Город:</p>           
@@ -52,7 +59,7 @@
            </div>
         </div>
 
-        <p class="payment-form__description">Выберите номинал сертификата:</p>             
+        <p class="payment-form__description">Выберите номинал сертификата или введите сумму на Ваш выбор:</p>             
         <div class="payment-form__radio-wrapper select"> 
             <div class="radio">
                 <input class="price" type="radio" name="price[]" value="22 500" id="price-v1"/>
@@ -69,7 +76,12 @@
             <div class="radio">  
                 <input class="price" type="radio" name="price[]"  id="price-v4"/>
                 <label for="price-v4"><span></span></label> 
-                <input name="price" type="price" class="payment-form__input payment-form__input" placeholder="Сумма на Ваш выбор">
+                <input name="price"  
+                class="payment-form__input payment-form__input" 
+                placeholder="от 25 000 &#8381"
+                min="25000" max="1000000"
+                pattern='^\d{0,8}(\.\d{1,4})?$'
+                >
             </div>
          </div>
 
@@ -109,29 +121,32 @@
             </div>
             <div class="radio">            
                 <input class="payment" type="radio" name="payment[]" value="no" id="payment-v2"/>
-                <label for="payment-v2"><span></span>При получении</label> 
+                <label for="payment-v2"><span></span>При получении/безнал</label> 
             </div>
          </div>
 
          <div class="checks">
             <div class="checkbox">
-                <input type="checkbox" id="check-konf">
+                <input type="checkbox" id="check-konf" checked>
                 <label for="check-konf">Политика конфиденциальности</label>
              </div>
              <div class="checkbox">
-                <input type="checkbox" id="check-oferta">
+                <input type="checkbox" id="check-oferta" checked>
                 <label for="check-oferta">Договор оферта</label>
             </div>
         </div>
 
         <div class="btn-wrap">
-            <a class="payment-form__button btn" type="submit">ОТПРАВИТЬ</a>
+            <button class="payment-form__button btn" type="submit">ОТПРАВИТЬ</button>
         </div>
 
         </form>
     </div>
     
 </section>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="pay_form.js"></script>
 
 </body>
 </html>
